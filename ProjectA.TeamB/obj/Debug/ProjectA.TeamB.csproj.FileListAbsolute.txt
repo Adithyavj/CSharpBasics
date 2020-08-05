@@ -1,0 +1,5 @@
+D:\Project\Others\ConsoleApp\ProjectA.TeamB\bin\Debug\ProjectA.TeamB.dll
+D:\Project\Others\ConsoleApp\ProjectA.TeamB\bin\Debug\ProjectA.TeamB.pdb
+D:\Project\Others\ConsoleApp\ProjectA.TeamB\obj\Debug\ProjectA.TeamB.csprojResolveAssemblyReference.cache
+D:\Project\Others\ConsoleApp\ProjectA.TeamB\obj\Debug\ProjectA.TeamB.dll
+D:\Project\Others\ConsoleApp\ProjectA.TeamB\obj\Debug\ProjectA.TeamB.pdb

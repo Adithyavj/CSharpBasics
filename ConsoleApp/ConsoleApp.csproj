@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F6BB822-AFAA-4B05-B19F-FE4723F3A7D0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrays.cs" />
+    <Compile Include="BuildInTypes.cs" />
+    <Compile Include="ClassIncsharp.cs" />
+    <Compile Include="DataTypesConversion.cs" />
+    <Compile Include="Inheritance.cs" />
+    <Compile Include="Interfacesincsharp.cs" />
+    <Compile Include="Loops.cs" />
+    <Compile Include="MethodHiding%28Inheritance%29.cs" />
+    <Compile Include="MethodOverloading.cs" />
+    <Compile Include="MethodParameters.cs" />
+    <Compile Include="NamespaceSample.cs" />
+    <Compile Include="NullableTypes.cs" />
+    <Compile Include="Operators.cs" />
+    <Compile Include="Polymorphism.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="Propertiesincsharp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadWriteToConsole.cs" />
+    <Compile Include="StaticandInstanceMembers.cs" />
+    <Compile Include="Structures.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectA.TeamA\ProjectA.TeamA.csproj">
+      <Project>{4c79fbfe-bb99-409b-b852-621630b634f4}</Project>
+      <Name>ProjectA.TeamA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectA.TeamB\ProjectA.TeamB.csproj">
+      <Project>{e8b506db-420b-4d0f-8cfe-a67311f49bdf}</Project>
+      <Name>ProjectA.TeamB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
