@@ -21,6 +21,25 @@ namespace ConsoleApp
             c1.Print2();
             c1.Print3();
             c1.Print4();
+
+            //IMPORTANT :
+            //We cannot Create an instance of an interface
+            //but an interface reference variable can point to a derived class object
+
+            //ICustomer1 cust = new ICustomer1();
+            //cust.Print1();
+            //Intefaces are incomplete
+            //the above is not possible as Icustomer1 does not implement the Print1() method
+            // do there is nothing to call
+            //thus interface cannot have objects
+
+            //However we can do this
+            ICustomer1 cuss = new CustomerNew(); //we can create an object refernce variable for ICustomer1 that point to CustomerNew
+            cuss.Print1();
+            //parent class reference variable can point to a child class
+            //here, Icustomer1 is parent
+            //      CustomerNew is child
+            // so a reference object of ICusomter1 can point to CustomerNew class
         }
     }
 
@@ -81,23 +100,5 @@ namespace ConsoleApp
         {
             Console.WriteLine("ICustomer4 Print Method");
         }
-
-
-        //IMPORTANT :
-        //We cannot Create an instance of an interface
-        //but an interface reference variable can point to a derived class object
-
-        //ICustomer1 cust = new ICustomer1();
-        //cust.Print1();
-        //Intefaces are incomplete
-        //the above is not possible as Icustomer1 does not implement the Print1() method
-        // do there is nothing to call
-        //thus interface cannot have objects
-
-        //However we can do this
-        ICustomer1 cust = new CustomerNew(); //we can create an object refer
-        //parent class reference variable can point to a child class
-        //here, Icustomer1 is parent
-        //      CustomerNew is child
     }
 }
