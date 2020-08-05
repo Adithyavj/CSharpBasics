@@ -27,9 +27,7 @@ namespace ConsoleApp
     //5. A class can inherit from multiple interfaces at the same time
     //   but class cannot inherit from multiple abstract classes at the same time
 
-
-
-    public abstract class A
+    public abstract class A1
     {
         int i = 0; //field
         public void print() //method with implementation

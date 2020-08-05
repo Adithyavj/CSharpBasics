@@ -49,6 +49,7 @@
     <Compile Include="Inheritance.cs" />
     <Compile Include="InterfaceExplicitImplementation.cs" />
     <Compile Include="Interfacesincsharp.cs" />
+    <Compile Include="interfacevsabstractclass.cs" />
     <Compile Include="Loops.cs" />
     <Compile Include="MethodHiding%28Inheritance%29.cs" />
     <Compile Include="MethodOverloading.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="NullableTypes.cs" />
     <Compile Include="Operators.cs" />
     <Compile Include="Polymorphism.cs" />
+    <Compile Include="problemsofmultipleinheritance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Propertiesincsharp.cs" />
