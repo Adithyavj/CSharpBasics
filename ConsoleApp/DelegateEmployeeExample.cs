@@ -10,24 +10,24 @@ namespace ConsoleApp
     {
         static void main()
         {
-            List<Employee> empList = new List<Employee>();
+            List<EmployeeD> empList = new List<EmployeeD>();
 
-            empList.Add(new Employee() { ID = 101, Name = "Adi", Salary = 20000, Experience = 2 });
-            empList.Add(new Employee() { ID = 102, Name = "Fasil", Salary = 25000, Experience = 5 });
-            empList.Add(new Employee() { ID = 103, Name = "Jishnu", Salary = 10000, Experience = 2 });
-            empList.Add(new Employee() { ID = 104, Name = "Ashraf", Salary = 20000, Experience = 6 });
+            empList.Add(new EmployeeD() { ID = 101, Name = "Adi", Salary = 20000, Experience = 2 });
+            empList.Add(new EmployeeD() { ID = 102, Name = "Fasil", Salary = 25000, Experience = 5 });
+            empList.Add(new EmployeeD() { ID = 103, Name = "Jishnu", Salary = 10000, Experience = 2 });
+            empList.Add(new EmployeeD() { ID = 104, Name = "Ashraf", Salary = 20000, Experience = 6 });
 
             //instance of the delegate
             IsPromotable isPromotable = new IsPromotable(Promote);
 
             //calling the function
-            Employee.PromoteEmployee(empList, isPromotable);
+            EmployeeD.PromoteEmployee(empList, isPromotable);
         }
 
 
         //This is the function which does the logic for us
         //It has the same signature as that of the delegate
-        public static bool Promote(Employee emp)
+        public static bool Promote(EmployeeD emp)
         {
             if (emp.Experience >= 5)
                 return true;
@@ -36,11 +36,11 @@ namespace ConsoleApp
         }
     }
 
-    delegate bool IsPromotable(Employee empl);
+    delegate bool IsPromotable(EmployeeD empl);
 
     //we make this class reusable
     //depending on the need the method should be flexible
-    class Employee
+    class EmployeeD
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -48,9 +48,9 @@ namespace ConsoleApp
         public int Experience { get; set; }
 
         //Method to check if employee is promoted
-        public static void PromoteEmployee(List<Employee> employeeList, IsPromotable IsEligibleToPromote) // to passin a function as a parameter use a delegate
+        public static void PromoteEmployee(List<EmployeeD> employeeList, IsPromotable IsEligibleToPromote) // to passin a function as a parameter use a delegate
         {
-            foreach (Employee employee in employeeList)
+            foreach (EmployeeD employee in employeeList)
             {
                 //here the logic is hardcoded, to replace this and make it reusable
                 // we use delegate

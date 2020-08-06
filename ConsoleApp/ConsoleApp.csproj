@@ -47,6 +47,7 @@
     <Compile Include="ClassIncsharp.cs" />
     <Compile Include="DataTypesConversion.cs" />
     <Compile Include="DelegateEmployeeExample.cs" />
+    <Compile Include="DelegateEmployeeExampleusingLambda.cs" />
     <Compile Include="Delegatesincsharp.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="InterfaceExplicitImplementation.cs" />
