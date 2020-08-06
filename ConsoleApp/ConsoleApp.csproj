@@ -54,6 +54,7 @@
     <Compile Include="MethodHiding%28Inheritance%29.cs" />
     <Compile Include="MethodOverloading.cs" />
     <Compile Include="MethodParameters.cs" />
+    <Compile Include="mutlipleinheritanceusinginterface.cs" />
     <Compile Include="NamespaceSample.cs" />
     <Compile Include="NullableTypes.cs" />
     <Compile Include="Operators.cs" />
