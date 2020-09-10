@@ -2,3 +2,4 @@ D:\Project\Others\ConsoleApp\ProjectA.TeamA\bin\Debug\ProjectA.TeamA.dll
 D:\Project\Others\ConsoleApp\ProjectA.TeamA\bin\Debug\ProjectA.TeamA.pdb
 D:\Project\Others\ConsoleApp\ProjectA.TeamA\obj\Debug\ProjectA.TeamA.dll
 D:\Project\Others\ConsoleApp\ProjectA.TeamA\obj\Debug\ProjectA.TeamA.pdb
+D:\Project\Others\ConsoleApp\ProjectA.TeamA\obj\Debug\ProjectA.TeamA.csprojResolveAssemblyReference.cache

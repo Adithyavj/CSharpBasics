@@ -20,8 +20,8 @@ namespace ConsoleApp
         {
             //We pass a function to the constructor of the delegate
             HellofunctionDelegate del = new HellofunctionDelegate(Hello); //the constructor of delegate takes a function with void return type and string argument
-            del("This is a call from Delegate"); //this point to the Hello function
-            //if the signature of the delegate doesnt match that of the function,
+            del("This is a call from Delegate"); //this points to the Hello function
+            //if the signature of the delegate doesn't match that of the function,
             //then there will be a compiler error, this is why delegate are called type safe
         }
 
@@ -30,7 +30,7 @@ namespace ConsoleApp
             Console.WriteLine(strMessage);
         }
         //DEFINITION
-        //A delegate is a tyep safe function pointer
+        //A delegate is a type safe function pointer
         //ie, a delegate points to a function and when you invoke the delegate the function will be invoked
         //it holds a reference(pointer) to a function
     }

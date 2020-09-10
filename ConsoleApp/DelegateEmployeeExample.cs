@@ -53,7 +53,8 @@ namespace ConsoleApp
             foreach (EmployeeD employee in employeeList)
             {
                 //here the logic is hardcoded, to replace this and make it reusable
-                // we use delegate
+                //ie, we use delegate 
+                //The below is how it was before using a delegate
                 //if (employee.Experience >= 5)
                 //{
                 //    Console.WriteLine(employee.Name + " Promoted");
